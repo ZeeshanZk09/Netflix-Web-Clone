@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel-Sans:wght@600&family=Poopins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@600;700;800&family=Whisper&display=swap');
+
 
 *{
     margin: 0;
@@ -6,36 +7,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color:black;
+}
+
 .main{
     background-image: url(./Sources/Images/main-image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: max(1200px, 100vw) ;
-    height: 80vh;
+    box-shadow: 1.25rem black;
+    background-size: max(75rem, 100vw) ;
+    block-size: 70vh;
     position: relative;
 }
 
 .main .box{
-    height: 80vh;
-    width: 100%;
-    opacity: 0.44;
+    block-size: 70vh;
+    inline-size: 100%;
+    opacity: 0.69;
     background-color: black;
     position: absolute;
-    top: 0;
+    inset-block-start: 0;
 }
 
 nav{
-    max-width: 60vw;
+    max-inline-size: 60vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
     align-items: center;
-    height: 62px;
+    block-size: 3.875rem;
 }
 
 nav img{
     color: red;
-    width: 114px;
+    inline-size: 7.125rem;
     position: relative;
     z-index: 10;
 }
@@ -46,7 +52,7 @@ nav button {
 }
 
 .hero{
-    height: 100%;
+    block-size: calc(100% - 3.875rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +60,82 @@ nav button {
     color: white;
     position: relative;
     font-family:  "Martel Sans", sans-serif;
+    gap: 1.438rem;
+    padding: 0 1.875rem;
 }
 
-.hero :first-child{
-    font-weight: 900;
-    font-size: 48px;
+.hero> :first-child{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 3.438rem;
+    text-align: center;
+}
+@media (min-width : 768px) and (max-width : 1024px) {
+    .hero> :first-child, 
+.hero> :nth-child(2), 
+.hero> :nth-child(3) {
+    transform: scale(0.9);
+    
+}
+    .hero{
+        gap: 0.06rem;
+}
+    .hero> :first-child{
+        line-height: 3.5rem;
+    }
+}
+
+
+.hero> :nth-child(2){
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.hero> :nth-child(3){
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    /* display: inline-block; */
+}
+.separation{
+    block-size: 0.438rem;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding : 3px 24px;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.hero-buttons{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
 }
