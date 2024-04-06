@@ -17,12 +17,12 @@ body{
     background-position: center center;
     box-shadow: 1.25rem black;
     background-size: max(75rem, 100vw) ;
-    block-size: 70vh;
+    block-size: 748px;
     position: relative;
 }
 
 .main .box{
-    block-size: 70vh;
+    block-size: 100%;
     inline-size: 100%;
     opacity: 0.69;
     background-color: black;
@@ -31,17 +31,24 @@ body{
 }
 
 nav{
-    max-inline-size: 60vw;
-    justify-content: space-between;
-    margin: auto;
+    max-inline-size: 100vw;
+    justify-content: center;
+    margin: 0;
     display: flex;
     align-items: center;
-    block-size: 3.875rem;
+    padding-inline-start: 148px;
+    padding-inline-end: 148px;
+    position: relative;
+    inset-block-start: 20px;
+    inline-size: max-content;
+    gap: 900px;
+    z-index: 10;
 }
 
-nav img{
-    color: red;
-    inline-size: 7.125rem;
+nav>span>img{
+    inline-size: 250px;
+    block-size: 47px;
+    padding-block-start: 8px;
     position: relative;
     z-index: 10;
 }
@@ -61,13 +68,13 @@ nav button {
     position: relative;
     font-family:  "Martel Sans", sans-serif;
     gap: 1.438rem;
-    padding: 0 1.875rem;
+    padding-block-end: 0;
 }
 
 .hero> :first-child{
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 3.438rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 @media (min-width : 768px) and (max-width : 1024px) {
@@ -89,15 +96,15 @@ nav button {
 .hero> :nth-child(2){
     font-family: sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     display: inline-block;
 }
 
 .hero> :nth-child(3){
     font-family: sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 100;
+    font-size: 1.4rem;
     text-align: center;
     /* display: inline-block; */
 }
@@ -113,26 +120,44 @@ nav button {
 }
 
 .btn-red{
-    background-color: red;
+    background-color: #E50914;
     color: white;
-    padding : 3px 24px;
-    font-size: 24px;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 18px;
+    padding : 16px ;
+    padding-inline-start: 25px;
+    padding-inline-end: 35px;
+    font-size: 32px;
     border-radius: 4px;
 }
-
+.btn-red i {
+    font-family: sans-seri;
+    font-weight: 100;
+    font-size: 40px;
+}
 .hero-buttons{
     display : flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 9px;
 }
 
 .main input {
-    padding: 3px 24px;
-    font-size: 20px;
+    padding: 26px 150px 26px 15px;
+    font-size: 22px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
-    background-color: rgba(23, 23, 23, 0.2);
-    color: white;
+    border: 1px solid #cac1c171 ;
+    background-color: #17171788;
+    color: #ADBCBC;
+    
 }
 
 .btn-red-sm{
