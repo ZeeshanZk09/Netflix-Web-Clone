@@ -95,6 +95,7 @@ nav button {
         gap: 350px;
         transform: scale(1);
         inset-block-start: 10px;
+        /* justify-content: space-between; */
 }
     .hero{
         gap: 0rem;
@@ -169,6 +170,14 @@ nav button {
 }
 }
 
+@media  (min-width : 320px) {
+    .main input {
+        transform: scale(1);
+}
+    nav{
+        transform: scale(0.6);
+}
+}
 
 .hero> :nth-child(2){
     font-family: sans-serif;
