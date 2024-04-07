@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 1.25rem black;
-    background-size: max(75rem, 100vw) ;
+    background-size: max(85rem, 100vw) ;
     block-size: 748px;
     position: relative;
 }
@@ -36,21 +36,23 @@ nav{
     margin: 0;
     display: flex;
     align-items: center;
-    padding-inline-start: 148px;
-    padding-inline-end: 148px;
     position: relative;
-    inset-block-start: 20px;
-    inline-size: max-content;
-    gap: 900px;
+    inset-block-start: 40px;
+    block-size: 62px;
+    gap: 800px;
     z-index: 10;
 }
 
 nav>span>img{
     inline-size: 250px;
     block-size: 47px;
+    
     padding-block-start: 8px;
     position: relative;
     z-index: 10;
+}
+nav>span{
+    font-size: 40px;
 }
 
 nav button {
@@ -81,15 +83,90 @@ nav button {
     .hero> :first-child, 
 .hero> :nth-child(2), 
 .hero> :nth-child(3) {
-    transform: scale(0.9);
+    transform: scale(1);
     
+}   .main{
+        transform: scale(1);
+}
+    .main .box{
+        transform: scale(1);
+}
+    nav{
+        gap: 350px;
+        transform: scale(1);
+        inset-block-start: 10px;
 }
     .hero{
-        gap: 0.06rem;
+        gap: 0rem;
 }
     .hero> :first-child{
         line-height: 3.5rem;
+}
+    .hero-buttons, .hero-buttons>button>i{
+        transform: scale(1);
+}
+}
+@media (min-width : 320px) and (max-width : 767px) {
+    .hero> :first-child, 
+.hero> :nth-child(2), 
+.hero> :nth-child(3) {
+    transform: scale(0.6);
+    
+}
+    .hero> :first-child{
+        transform: scale(1);
+        flex-wrap: wrap;
+        display: flex;
+        font-size: 2.4rem;
+}   
+    .main{
+        transform: scale(1);
+}
+    .main .box{
+        transform: scale(1);
+}
+    nav{
+        gap: 100px;
+        transform: scale(0.7);
+        position: relative;
+        inset-block-start: 10px;
+        inset-inline-end: 5px;
+        inset-inline-start: 5px;
+}
+    nav>span>img{
+        inline-size: 250px;
+        block-size: 47px;
+        inset-inline-start: 5px;
+        position: relative;
+}
+    nav>span{
+        align-items: start;
     }
+    .hero{
+        gap: 1px;
+}
+    .hero> :first-child{
+        line-height: 3.5rem;
+}
+    .hero-buttons, .hero-buttons>button>i{
+        transform: scale(0.7);
+}
+    .hero-buttons{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+}
+    .hero-buttons>button{
+        
+        transform: scale(0.8);
+        
+}   
+    .main input{
+        padding: 20px 150px 20px 15px;
+        font-size: 14px;
+        transform: scale(1.2);
+        
+}
 }
 
 
@@ -117,6 +194,10 @@ nav button {
     padding: 3px 8px;
     font-weight: bold;
     background-color: white;
+    border: border-box;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
 }
 
 .btn-red{
@@ -134,6 +215,7 @@ nav button {
     padding-inline-end: 35px;
     font-size: 32px;
     border-radius: 4px;
+    border: border-box;
 }
 .btn-red i {
     font-family: sans-seri;
