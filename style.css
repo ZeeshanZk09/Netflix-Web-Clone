@@ -79,105 +79,7 @@ nav button {
     font-size: 4.5rem;
     text-align: center;
 }
-@media (min-width : 768px) and (max-width : 1024px) {
-    .hero> :first-child, 
-.hero> :nth-child(2), 
-.hero> :nth-child(3) {
-    transform: scale(1);
-    
-}   .main{
-        transform: scale(1);
-}
-    .main .box{
-        transform: scale(1);
-}
-    nav{
-        gap: 350px;
-        transform: scale(1);
-        inset-block-start: 10px;
-        /* justify-content: space-between; */
-}
-    .hero{
-        gap: 0rem;
-}
-    .hero> :first-child{
-        line-height: 3.5rem;
-}
-    .hero-buttons, .hero-buttons>button>i{
-        transform: scale(1);
-}
-}
-@media (min-width : 320px) and (max-width : 767px) {
-    .hero> :first-child, 
-.hero> :nth-child(2), 
-.hero> :nth-child(3) {
-    transform: scale(0.6);
-    
-}
-    .hero> :first-child{
-        transform: scale(1);
-        flex-wrap: wrap;
-        display: flex;
-        font-size: 2.4rem;
-}   
-    .main{
-        transform: scale(1);
-}
-    .main .box{
-        transform: scale(1);
-}
-    nav{
-        gap: 100px;
-        transform: scale(0.7);
-        position: relative;
-        inset-block-start: 10px;
-        inset-inline-end: 5px;
-        inset-inline-start: 5px;
-}
-    nav>span>img{
-        inline-size: 250px;
-        block-size: 47px;
-        inset-inline-start: 5px;
-        position: relative;
-}
-    nav>span{
-        align-items: start;
-    }
-    .hero{
-        gap: 1px;
-}
-    .hero> :first-child{
-        line-height: 3.5rem;
-}
-    .hero-buttons, .hero-buttons>button>i{
-        transform: scale(0.7);
-}
-    .hero-buttons{
-        flex-wrap: wrap;
-        flex-direction: column;
-        
-}
-    .hero-buttons>button{
-        
-        transform: scale(0.8);
-        
-}   
-    .main input{
-        padding: 20px 150px 20px 15px;
-        font-size: 14px;
-        transform: scale(1.2);
-        
-}
-}
 
-@media  (min-width : 320px) {
-    .main input {
-        transform: scale(1);
-}
-    nav{
-        transform: scale(0.6);
-}
-}
 
 .hero> :nth-child(2){
     font-family: sans-serif;
@@ -227,7 +129,7 @@ nav button {
     border: border-box;
 }
 .btn-red i {
-    font-family: sans-seri;
+    font-family: sans-serif;
     font-weight: 100;
     font-size: 40px;
 }
@@ -254,4 +156,10 @@ nav button {
 .btn-red-sm{
     background-color: red;
     color: white;
+    
+}
+
+.btn-drop_down{
+    font-size: 30px;
+    padding-inline-end: 6px;
 }
