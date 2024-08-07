@@ -1,58 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@600;700;800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
-
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color:black;
+body {
+    background-color: black;
 }
 
-.main{
-    background-image: url(./Sources/Images/main-image.jpg);
-    background-repeat: no-repeat;
+.main {
+    background-image: url("./Sources/Images/main-image.jpg");
     background-position: center center;
-    box-shadow: 1.25rem black;
-    background-size: max(85rem, 100vw) ;
-    block-size: 748px;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
     position: relative;
 }
 
-.main .box{
-    block-size: 100%;
-    inline-size: 100%;
+.main .box {
+    height: 644px;
+    width: 100%;
     opacity: 0.69;
-    background-color: black;
     position: absolute;
-    inset-block-start: 0;
+    top: 0;
+    background-color: black;
 }
 
-nav{
-    max-inline-size: 100vw;
-    justify-content: center;
-    margin: 0;
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
     display: flex;
     align-items: center;
-    position: relative;
-    inset-block-start: 40px;
-    block-size: 62px;
-    gap: 800px;
-    z-index: 10;
+    height: 100px;
 }
 
-nav>span>img{
-    inline-size: 250px;
-    block-size: 47px;
-    
-    padding-block-start: 8px;
+nav img {
+    color: red;
+    width: 130px;
     position: relative;
     z-index: 10;
-}
-nav>span{
-    font-size: 40px;
 }
 
 nav button {
@@ -60,106 +49,180 @@ nav button {
     z-index: 10;
 }
 
-.hero{
-    block-size: calc(100% - 3.875rem);
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
-    font-family:  "Martel Sans", sans-serif;
-    gap: 1.438rem;
-    padding-block-end: 0;
+    gap: 23px;
+    padding: 0 30px;
 }
 
-.hero> :first-child{
+.hero> :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 4.5rem;
+    font-size: 48px;
     text-align: center;
 }
 
-
-.hero> :nth-child(2){
-    font-family: sans-serif;
+.hero> :nth-child(2) {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 24px;
     text-align: center;
-    display: inline-block;
 }
 
-.hero> :nth-child(3){
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 1.4rem;
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
     text-align: center;
-    /* display: inline-block; */
 }
-.separation{
-    block-size: 0.438rem;
+
+.separation {
+    height: 7px;
     background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
-.btn{
+.btn {
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
-    border: border-box;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
     cursor: pointer;
-    font-size: 30px;
-    border-radius: 10px;
+
 }
 
-.btn-red{
-    background-color: #E50914;
+.btn-red {
+    background-color: red;
     color: white;
-    font-style: normal;
-    font-family: sans-serif;
-    font-weight: 100;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    gap: 18px;
-    padding : 16px ;
-    padding-inline-start: 25px;
-    padding-inline-end: 35px;
-    font-size: 32px;
+    padding: 3px 24px;
+    font-size: 20px;
     border-radius: 4px;
-    border: border-box;
+    font-weight: 400;
 }
-.btn-red i {
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 40px;
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
 }
-.hero-buttons{
-    display : flex;
+
+.hero-buttons {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 16px;
 }
 
 .main input {
-    padding: 26px 150px 26px 15px;
-    font-size: 22px;
-    font-weight: 100;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 4px;
-    border: 1px solid #cac1c171 ;
-    background-color: #17171788;
-    color: #ADBCBC;
-    
-}
-
-.btn-red-sm{
-    background-color: red;
+    padding: 7px 101px 8px 14px;
     color: white;
-    
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
-.btn-drop_down{
-    font-size: 30px;
-    padding-inline-end: 6px;
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
